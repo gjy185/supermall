@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-
     <router-view v-slot="{ Component }">
-  <keep-alive>
-    <component :is="Component" />
-  </keep-alive>
-</router-view>
+      <keep-alive>
+        <component :is="Component" />
+      </keep-alive>
+    </router-view>
     <main-tab-bar></main-tab-bar>
   </div>
 </template>
@@ -14,14 +13,13 @@
 import MainTabBar from 'components/content/mainTabbar/MainTabBar.vue'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MainTabBar
-
-  }
-}
+    MainTabBar,
+  },
+};
 </script>
 
 <style>
-  @import url('assets/css/base.css');
+@import url("assets/css/base.css");
 </style>

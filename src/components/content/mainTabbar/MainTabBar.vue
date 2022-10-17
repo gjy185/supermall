@@ -1,7 +1,7 @@
 
 <template>
   <tab-bar>
-    <tab-bar-item path="/home" activeColor="blue">
+    <tab-bar-item path="/home">
       <template v-slot:item-icon>
         <img src="~assets/img/tabbar/shouye.png" alt="" />
       </template>
@@ -12,7 +12,7 @@
         <div>首页</div>
       </template>
     </tab-bar-item>
-    <tab-bar-item path="/category" activeColor="blue">
+    <tab-bar-item path="/category">
       <template v-slot:item-icon>
         <img src="~/assets/img/tabbar/fenlei.png" alt="">
       </template>
@@ -23,7 +23,7 @@
         <div>分类</div>
       </template>
     </tab-bar-item>
-    <tab-bar-item path="/cart" activeColor="blue">
+    <tab-bar-item path="/cart" >
       <template v-slot:item-icon>
         <img src="~/assets/img/tabbar/gouwuche.png" alt="">
       </template>
@@ -35,7 +35,7 @@
       </template>
     </tab-bar-item>
 
-    <tab-bar-item path="/profile" activeColor="blue">
+    <tab-bar-item path="/profile" >
       <!-- <img slot="item-icon" src="~/assets/img/tabbar/mine.png" alt="" />
       <img
         slot="item-icon-active"
