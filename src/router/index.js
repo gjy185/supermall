@@ -4,6 +4,7 @@ const Home = () =>import('../views/home/Home.vue')
 const Category = () => import('../views/category/Category')
 const Cart = () => import('../views/cart/Cart')
 const Profile = () => import('../views/profile/Profile')
+const Detail = () => import('../views/detail/Detail')
 
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     // name: 'Profile',
     // component: () => import('@/views/profile/Profile')
 
+  },
+  {
+    path: '/detail/:iid',
+    component: Detail
+
   }
 ]
 
@@ -44,6 +50,5 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-
 
 export default router

@@ -133,6 +133,7 @@ export default {
     this.scroll.on('scrollEnd', () => {
       console.log('上拉加载更多');
     })
+
   },
   methods: {
     btnClick() {
@@ -144,10 +145,10 @@ export default {
 </script>
 
 <style>
-.wrapper {
+/* .wrapper {
   height: 200px;
   background-color: red;
 
   overflow: hidden;
-}
+} */
 </style>
