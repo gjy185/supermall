@@ -103,7 +103,7 @@ export default {
   },
   deactivated () {
     this.safeY = this.$refs.scroll.getScrollY()
-    console.log(this.safeY);
+    // console.log(this.safeY);
   },
   // create生命周期函数 一旦创建打开就会运行
   created() {
