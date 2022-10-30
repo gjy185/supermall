@@ -39,6 +39,7 @@ export default {
   methods: {
     itemClick(index) {
       this.currentIndex = index
+      this.$emit('itemClick', index)
       // console.log(this.currentIndex);
       // console.log(index);
     },

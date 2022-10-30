@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="wrapper">
     <router-view v-slot="{ Component }">
       <keep-alive exclude="Detail">
         <component :is="Component" />
@@ -21,6 +21,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("assets/css/base.css");
 </style>
